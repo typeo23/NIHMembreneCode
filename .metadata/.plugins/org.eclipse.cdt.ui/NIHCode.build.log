@@ -1,0 +1,64 @@
+00:33:02 **** Build of configuration Debug for project NIHCode ****
+make all 
+Building file: ../src/NIHCode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/NIHCode.d" -MT"src/NIHCode.o" -o "src/NIHCode.o" "../src/NIHCode.cpp"
+../src/NIHCode.cpp:446:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:360:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:410:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:442:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:357:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:357:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:441:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:358:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:357:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:365:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:407:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:366:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:408:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:409:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:364:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+16 warnings generated.
+Finished building: ../src/NIHCode.cpp
+ 
+Building target: NIHCode
+Invoking: MacOS X C++ Linker
+g++ -L/opt/local/lib/ -o "NIHCode"  ./src/NIHCode.o   -lfftw3 -lfftw3f
+Finished building target: NIHCode
+ 
+
+00:33:04 Build Finished (took 2s.172ms)
+
