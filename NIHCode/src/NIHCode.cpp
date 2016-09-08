@@ -388,10 +388,14 @@ int main(int argc, char **argv) {
     float *z2_1D = init_matrix<float>(ngrid*ngrid);
     float *t1x1D = init_matrix<float>(ngrid*ngrid);
     float *t1y1D = init_matrix<float>(ngrid*ngrid);
+    /****************************************************/
     float *norm1x1D = init_matrix<float>(ngrid*ngrid);
     float *norm1y1D = init_matrix<float>(ngrid*ngrid);
+    float *norm2x1D = init_matrix<float>(ngrid*ngrid);
+    float *norm2y1D = init_matrix<float>(ngrid*ngrid);
     float *normhx1D = init_matrix<float>(ngrid*ngrid);
     float *normhy1D = init_matrix<float>(ngrid*ngrid);
+    /****************************************************/
     float *dmx1D = init_matrix<float>(ngrid*ngrid);
     float *dmy1D = init_matrix<float>(ngrid*ngrid);
     float *dpx1D = init_matrix<float>(ngrid*ngrid);
@@ -435,6 +439,8 @@ int main(int argc, char **argv) {
     fftwf_complex *t1yqS = init_matrix<fftwf_complex>(ngridpair); // tilt of top monolayer
     fftwf_complex *norm1xqS = init_matrix<fftwf_complex>(ngridpair);
     fftwf_complex *norm1yqS = init_matrix<fftwf_complex>(ngridpair); // normal of top monolayer
+    fftwf_complex *norm2xqS = init_matrix<fftwf_complex>(ngridpair);
+    fftwf_complex *norm2yqS = init_matrix<fftwf_complex>(ngridpair); // normal of bottom monolayer
 
     fftwf_complex *normhxqS = init_matrix<fftwf_complex>(ngridpair);
     fftwf_complex *normhyqS = init_matrix<fftwf_complex>(ngridpair); // normal from height field
@@ -504,6 +510,10 @@ int main(int argc, char **argv) {
     float **norm1xI = init_matrix<float>(ngrid, ngrid);
     float **norm1yR = init_matrix<float>(ngrid, ngrid);
     float **norm1yI = init_matrix<float>(ngrid, ngrid);
+    float **norm2xR = init_matrix<float>(ngrid, ngrid);
+    float **norm2xI = init_matrix<float>(ngrid, ngrid);
+    float **norm2yR = init_matrix<float>(ngrid, ngrid);
+    float **norm2yI = init_matrix<float>(ngrid, ngrid);
 
     float **normhxR = init_matrix<float>(ngrid, ngrid);
     float **normhxI = init_matrix<float>(ngrid, ngrid);
@@ -560,6 +570,9 @@ int main(int argc, char **argv) {
     /*************** Normals ****************************************************/
     float **norm1xq2 = init_matrix<float>(ngrid, ngrid);
     float **norm1yq2 = init_matrix<float>(ngrid, ngrid);
+    float **norm2xq2 = init_matrix<float>(ngrid, ngrid);
+    float **norm2yq2 = init_matrix<float>(ngrid, ngrid);
+
 
     float **normhxq2 = init_matrix<float>(ngrid, ngrid);
     float **normhyq2 = init_matrix<float>(ngrid, ngrid);
@@ -645,6 +658,9 @@ int main(int argc, char **argv) {
     /****************** Normals *****************************/
     float *norm1xq2_uniq = init_matrix<float>(uniq_Ny);
     float *norm1yq2_uniq = init_matrix<float>(uniq_Ny);
+    float *norm2xq2_uniq = init_matrix<float>(uniq_Ny);
+    float *norm2yq2_uniq = init_matrix<float>(uniq_Ny);
+
 
     float *normhxq2_uniq = init_matrix<float>(uniq_Ny);
     float *normhyq2_uniq = init_matrix<float>(uniq_Ny);
@@ -1544,6 +1560,9 @@ int main(int argc, char **argv) {
                     /************* Normals *****************************************/
                     norm1x1D[i*ngrid+j]=norm_1_patch[i][j][0];
                     norm1y1D[i*ngrid+j]=norm_1_patch[i][j][1];
+                    norm2x1D[i*ngrid+j]=norm_2_patch[i][j][0];
+                    norm2y1D[i*ngrid+j]=norm_2_patch[i][j][1];
+
                     normhx1D[i*ngrid+j]=normh[i*ngrid + j][0];
                     normhy1D[i*ngrid+j]=normh[i*ngrid + j][1];
                     /***************************************************************/
@@ -1597,6 +1616,8 @@ int main(int argc, char **argv) {
             /********************* Normal *******************************/
             fftwf_execute_dft_r2c(spectrum_plan, norm1x1D, norm1xqS);
             fftwf_execute_dft_r2c(spectrum_plan, norm1y1D, norm1yqS);
+            fftwf_execute_dft_r2c(spectrum_plan, norm2x1D, norm2xqS);
+            fftwf_execute_dft_r2c(spectrum_plan, norm2y1D, norm2yqS);
             fftwf_execute_dft_r2c(spectrum_plan, normhx1D, normhxqS);
             fftwf_execute_dft_r2c(spectrum_plan, normhy1D, normhyqS);
             /************************************************************/
@@ -1607,12 +1628,14 @@ int main(int argc, char **argv) {
             /***************** Normal ********************/
             fullArray(norm1xR,norm1xI,norm1xqS,Lxy);
             fullArray(norm1yR,norm1yI,norm1yqS,Lxy);
+            fullArray(norm2xR,norm2xI,norm2xqS,Lxy);
+            fullArray(norm2yR,norm2yI,norm2yqS,Lxy);
 
-            //fullArray(normhxR,normhxI,normhxqS,Lxy);
-            //fullArray(normhyR,normhyI,normhyqS,Lxy);
+            fullArray(normhxR,normhxI,normhxqS,Lxy);
+            fullArray(normhyR,normhyI,normhyqS,Lxy);
 
-            fullArray(normhxR,normhxI,dhxqS,Lxy);
-            fullArray(normhyR,normhyI,dhyqS,Lxy);
+            //fullArray(normhxR,normhxI,dhxqS,Lxy);
+            //fullArray(normhyR,normhyI,dhyqS,Lxy);
             /*********************************************/
 
             fullArray(dpxR,dpxI,dpxqS,Lxy);
@@ -1685,6 +1708,8 @@ int main(int argc, char **argv) {
                     /*************** Normal *******************************************/
                     norm1xq2[i][j] += norm1xR[i][j]*norm1xR[i][j] + norm1xI[i][j]*norm1xI[i][j];
                     norm1yq2[i][j] += norm1yR[i][j]*norm1yR[i][j] + norm1yI[i][j]*norm1yI[i][j];
+                    norm2xq2[i][j] += norm2xR[i][j]*norm2xR[i][j] + norm2xI[i][j]*norm2xI[i][j];
+                    norm2yq2[i][j] += norm2yR[i][j]*norm2yR[i][j] + norm2yI[i][j]*norm2yI[i][j];
                     z1q2[i][j] += z1R[i][j]*z1R[i][j] + z1I[i][j]*z1I[i][j];
                     normhxq2[i][j] += normhxR[i][j]*normhxR[i][j] + normhxI[i][j]*normhxI[i][j];
                     normhyq2[i][j] +=normhyR[i][j]*normhyR[i][j] + normhyI[i][j]*normhyI[i][j];
@@ -1918,6 +1943,7 @@ int main(int argc, char **argv) {
 
         /****************** Normal ****************************************/
         qav(norm1xq2,norm1xq2_uniq,0);	qav(norm1yq2,norm1yq2_uniq,0);
+        qav(norm2xq2,norm2xq2_uniq,0);	qav(norm2yq2,norm2yq2_uniq,0);
         qav(normhxq2,normhxq2_uniq,0);	qav(normhyq2,normhyq2_uniq,0);
         qav(z1q2,z1q2_uniq,0);
         /*****************************************************************/
@@ -1988,16 +2014,24 @@ int main(int argc, char **argv) {
 
 
         cout <<"__________________*Normals*_____________________"<<endl;
-        cout << "norm1xq2=" << endl;
+        cout << "normnxq2=" << endl;
          for(i=0; i<uniq_Ny; i++){cout << normhxq2_uniq[i]/4000/frame_num << ", ";}
          cout << endl; 	cout << endl;
 
          cout << "norm1yq2=" << endl;
          for(i=0; i<uniq_Ny; i++){cout << normhyq2_uniq[i]/4000/frame_num << ", ";}
          cout << endl; 	cout << endl;
-         cout <<"__________________*Z1*_____________________"<<endl;
+         cout <<"__________________*Normals from tilt*_____________________"<<endl;
          cout << "norm1xq2=" << endl;
-         for(i=0; i<uniq_Ny; i++){cout << z1q2_uniq[i]/100/frame_num << ", ";}
+         for(i=0; i<uniq_Ny; i++){cout << (norm1xq2_uniq[i]+norm2xq2_uniq[i])/4000/frame_num << ", ";}
+         cout << endl; 	cout << endl;
+
+        cout << "norm1yq2=" << endl;
+        for(i=0; i<uniq_Ny; i++){cout << (norm1yq2_uniq[i]+norm2yq2_uniq[i])/4000/frame_num << ", ";}
+        cout << endl; 	cout << endl;
+         cout <<"__________________*Z1*_____________________"<<endl;
+         cout << "Z1=" << endl;
+         for(i=0; i<uniq_Ny; i++){cout << z1q2_uniq[i]/4000/frame_num << ", ";}
          cout << endl; 	cout << endl;
 
 
