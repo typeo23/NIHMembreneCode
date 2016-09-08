@@ -1,0 +1,1312 @@
+13:12:25 **** Clean-only build of configuration Debug for project NIHCode ****
+make clean 
+rm -rf  ./src/NIHCode.o  ./src/NIHCode.d  NIHCode
+ 
+13:12:26 **** Build of configuration Debug for project NIHCode ****
+make all 
+Building file: ../src/NIHCode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/NIHCode.d" -MT"src/NIHCode.o" -o "src/NIHCode.o" "../src/NIHCode.cpp"
+../src/NIHCode.cpp:410:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:441:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:360:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:442:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:364:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:446:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:409:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:408:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:366:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:365:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:407:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:357:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:358:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:357:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:357:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+16 warnings generated.
+Finished building: ../src/NIHCode.cpp
+ 
+Building target: NIHCode
+Invoking: MacOS X C++ Linker
+g++ -L/opt/local/lib/ -o "NIHCode"  ./src/NIHCode.o   -lfftw3 -lfftw3f
+Finished building target: NIHCode
+ 
+13:15:08 **** Incremental Build of configuration Debug for project NIHCode ****
+make all 
+Building file: ../src/NIHCode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/NIHCode.d" -MT"src/NIHCode.o" -o "src/NIHCode.o" "../src/NIHCode.cpp"
+../src/NIHCode.cpp:407:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:357:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:358:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:357:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:357:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:364:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:446:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:441:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:360:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:442:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:409:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:408:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:410:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:366:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:365:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+16 warnings generated.
+Finished building: ../src/NIHCode.cpp
+ 
+Building target: NIHCode
+Invoking: MacOS X C++ Linker
+g++ -L/opt/local/lib/ -o "NIHCode"  ./src/NIHCode.o   -lfftw3 -lfftw3f
+Finished building target: NIHCode
+ 
+13:15:44 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:366:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:442:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:441:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:446:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:360:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:357:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:409:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:358:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:357:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:357:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:410:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:365:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:407:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:364:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:408:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+16 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+13:17:15 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:2026:32: warning: unused variable 'tmpPair' [-Wunused-variable]
+                std::pair<float, int> tmpPair = std::make_pair<float, int>(q2_uniq_Ny[i], i);
+                                      ^
+../src/NIHCode.cpp:407:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:357:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:357:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:357:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:358:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:442:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:441:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:364:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:360:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:446:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:408:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:409:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:365:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:366:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:410:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+17 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+13:19:41 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+13:19:49 **** Clean-only build of configuration Debug for project NIHCode ****
+rm -rf src/NIHCode.d src/NIHCode.o NIHCode 
+13:19:52 **** Rebuild of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:2026:32: warning: unused variable 'tmpPair' [-Wunused-variable]
+                std::pair<float, int> tmpPair = std::make_pair<float, int>(q2_uniq_Ny[i], i);
+                                      ^
+../src/NIHCode.cpp:364:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:446:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:365:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:441:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:442:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:410:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:366:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:357:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:409:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:358:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:360:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:408:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:407:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:357:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:357:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+17 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+13:23:57 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:2026:27: error: no matching function for call to 'make_pair'
+                qpairs.push_back(std::make_pair<float, int>(q2_uniq_Ny[i], &i));
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/utility:504:1: note: candidate function [with _T1 = float, _T2 = int] not viable: no known conversion from 'int *' to 'int' for 2nd argument; remove &
+make_pair(_T1 __x, _T2 __y)
+^
+1 error generated.
+13:24:14 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:2026:27: error: no matching function for call to 'make_pair'
+                qpairs.push_back(std::make_pair<float, int>(q2_uniq_Ny[i], &i));
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/utility:504:1: note: candidate function [with _T1 = float, _T2 = int] not viable: no known conversion from 'int *' to 'int' for 2nd argument; remove &
+make_pair(_T1 __x, _T2 __y)
+^
+1 error generated.
+13:24:22 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:2026:27: error: no matching function for call to 'make_pair'
+                qpairs.push_back(std::make_pair<float, int>(&q2_uniq_Ny[i], i));
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/utility:504:1: note: candidate function [with _T1 = float, _T2 = int] not viable: no known conversion from 'float *' to 'float' for 1st argument; remove &
+make_pair(_T1 __x, _T2 __y)
+^
+1 error generated.
+13:24:28 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:366:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:365:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:410:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:360:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:364:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:409:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:408:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:407:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:357:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:357:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:358:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:357:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:441:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:442:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:446:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+16 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+13:25:04 **** Clean-only build of configuration Debug for project NIHCode ****
+rm -rf src/NIHCode.d src/NIHCode.o NIHCode 
+13:25:09 **** Rebuild of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:364:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:446:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:441:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:365:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:442:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:409:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:366:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:410:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:357:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:357:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:408:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:360:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:407:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:358:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:357:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+16 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+Info: Nothing to build for NIHCode
+Info: Nothing to build for NIHCode
+20:27:58 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:1295:44: error: invalid operands to binary expression ('float *' and 'float')
+                        norm_1_patch[i][j] += norm_1[k][j];
+                        ~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~
+../src/NIHCode.cpp:1359:49: error: invalid operands to binary expression ('float' and 'float *')
+                        norm_2_patch[xi][yi][j] += norm_2o[j];
+                        ~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~
+2 errors generated.
+20:28:53 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:1295:44: error: invalid operands to binary expression ('float *' and 'float')
+                        norm_1_patch[i][j] += norm_1o[k][j];
+                        ~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~
+../src/NIHCode.cpp:1359:49: error: invalid operands to binary expression ('float' and 'float *')
+                        norm_2_patch[xi][yi][j] += norm_2o[j];
+                        ~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~
+2 errors generated.
+20:28:58 **** Clean-only build of configuration Debug for project NIHCode ****
+rm -rf src/NIHCode.d src/NIHCode.o NIHCode 
+20:29:03 **** Rebuild of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:1295:44: error: invalid operands to binary expression ('float *' and 'float')
+                        norm_1_patch[i][j] += norm_1o[k][j];
+                        ~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~
+../src/NIHCode.cpp:1359:49: error: invalid operands to binary expression ('float' and 'float *')
+                        norm_2_patch[xi][yi][j] += norm_2o[j];
+                        ~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~
+2 errors generated.
+20:31:21 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:1251:31: error: subscripted value is not an array, pointer, or vector
+                    norm_1o[k][0]= dz1x1D[k];
+                    ~~~~~~~~~~^~
+../src/NIHCode.cpp:1252:31: error: subscripted value is not an array, pointer, or vector
+                    norm_1o[k][1]= dz1y1D[k];
+                    ~~~~~~~~~~^~
+../src/NIHCode.cpp:1253:31: error: subscripted value is not an array, pointer, or vector
+                    norm_1o[k][2]= -1.0;
+                    ~~~~~~~~~~^~
+../src/NIHCode.cpp:1255:31: error: subscripted value is not an array, pointer, or vector
+                    norm_2o[k][0]= -dz2x1D[k]*root_ginv2;
+                    ~~~~~~~~~~^~
+../src/NIHCode.cpp:1256:31: error: subscripted value is not an array, pointer, or vector
+                    norm_2o[k][1]= -dz2y1D[k]*root_ginv2; // signs are reversed
+                    ~~~~~~~~~~^~
+../src/NIHCode.cpp:1257:31: error: subscripted value is not an array, pointer, or vector
+                    norm_2o[k][2]= 1.0;
+                    ~~~~~~~~~~^~
+../src/NIHCode.cpp:1293:57: error: subscripted value is not an array, pointer, or vector
+                        norm_1_patch[i][j] += norm_1o[k][j];
+                                              ~~~~~~~~~~^~
+7 errors generated.
+20:34:24 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:1297:44: error: invalid operands to binary expression ('float *' and 'float')
+                        norm_1_patch[i][j] += norm1mol[j];
+                        ~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~
+../src/NIHCode.cpp:1361:49: error: invalid operands to binary expression ('float' and 'float *')
+                        norm_2_patch[xi][yi][j] += norm_2o[j];
+                        ~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~
+2 errors generated.
+20:35:18 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:419:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:460:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:456:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:455:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:422:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:421:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:420:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+23:45:43 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:460:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:420:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:455:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:456:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:419:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:422:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:421:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+21:55:38 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:419:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:421:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:422:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:420:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:460:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:456:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:455:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+22:17:55 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:419:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:421:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:460:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:456:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:420:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:455:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:422:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+00:15:04 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:419:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:422:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:421:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:420:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:460:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:455:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:456:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+19:48:24 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:1547:52: error: subscripted value is not an array, pointer, or vector
+                    normhx1D[i*ngrid+j]=normh[i][j][0];
+                                        ~~~~~~~~~~~^~
+../src/NIHCode.cpp:1548:52: error: subscripted value is not an array, pointer, or vector
+                    normhy1D[i*ngrid+j]=normh[i][j][1];
+                                        ~~~~~~~~~~~^~
+2 errors generated.
+20:00:34 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:1547:52: error: subscripted value is not an array, pointer, or vector
+                    normhx1D[i*ngrid+j]=normh[i][j][0];
+                                        ~~~~~~~~~~~^~
+../src/NIHCode.cpp:1548:52: error: subscripted value is not an array, pointer, or vector
+                    normhy1D[i*ngrid+j]=normh[i][j][1];
+                                        ~~~~~~~~~~~^~
+2 errors generated.
+20:00:39 **** Clean-only build of configuration Debug for project NIHCode ****
+rm -rf src/NIHCode.d src/NIHCode.o NIHCode 
+20:00:43 **** Rebuild of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:1547:52: error: subscripted value is not an array, pointer, or vector
+                    normhx1D[i*ngrid+j]=normh[i][j][0];
+                                        ~~~~~~~~~~~^~
+../src/NIHCode.cpp:1548:52: error: subscripted value is not an array, pointer, or vector
+                    normhy1D[i*ngrid+j]=normh[i][j][1];
+                                        ~~~~~~~~~~~^~
+2 errors generated.
+20:03:42 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:466:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:424:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:467:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:471:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:425:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:426:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:427:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+20:03:56 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:466:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:467:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:424:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:426:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:425:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:427:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:471:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+20:04:02 **** Clean-only build of configuration Debug for project NIHCode ****
+rm -rf src/NIHCode.d src/NIHCode.o NIHCode 
+20:04:05 **** Rebuild of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:426:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:427:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:424:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:425:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:471:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:467:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:466:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+20:29:19 **** Clean-only build of configuration Debug for project NIHCode ****
+rm -rf src/NIHCode.d src/NIHCode.o NIHCode 
+20:29:22 **** Rebuild of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:427:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:467:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:425:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:426:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:466:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:471:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:424:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+20:39:19 **** Clean-only build of configuration Debug for project NIHCode ****
+rm -rf src/NIHCode.d src/NIHCode.o NIHCode 
+20:39:25 **** Rebuild of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:427:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:425:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:426:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:424:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:466:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:467:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:471:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+20:59:19 **** Clean-only build of configuration Debug for project NIHCode ****
+rm -rf src/NIHCode.d src/NIHCode.o NIHCode 
+20:59:22 **** Rebuild of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:427:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:466:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:425:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:426:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:467:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:471:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:424:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+22:04:10 **** Incremental Build of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:425:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:424:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:466:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:427:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:467:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:426:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:471:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
+22:04:18 **** Clean-only build of configuration Debug for project NIHCode ****
+rm -rf src/NIHCode.d src/NIHCode.o NIHCode 
+22:04:20 **** Rebuild of configuration Debug for project NIHCode ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src/NIHCode.o ../src/NIHCode.cpp 
+../src/NIHCode.cpp:371:22: warning: unused variable 'u_dot_t' [-Wunused-variable]
+    float rootgxinv, u_dot_t;
+                     ^
+../src/NIHCode.cpp:427:20: warning: unused variable 'n2yqS' [-Wunused-variable]
+    fftwf_complex *n2yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:370:11: warning: unused variable 'ty_cum2' [-Wunused-variable]
+    float ty_cum2[100]={0};
+          ^
+../src/NIHCode.cpp:372:22: warning: unused variable 'tproj2' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+                     ^
+../src/NIHCode.cpp:426:20: warning: unused variable 'n2xqS' [-Wunused-variable]
+    fftwf_complex *n2xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:372:11: warning: unused variable 'tproj1' [-Wunused-variable]
+    float tproj1[3], tproj2[3];
+          ^
+../src/NIHCode.cpp:425:20: warning: unused variable 'n1yqS' [-Wunused-variable]
+    fftwf_complex *n1yqS = init_matrix<fftwf_complex>(ngridpair);  // n1(q) - upper monolayer
+                   ^
+../src/NIHCode.cpp:363:16: warning: unused variable 'histt' [-Wunused-variable]
+    int histn, histt, histtx;
+               ^
+../src/NIHCode.cpp:363:9: warning: unused variable 'histn' [-Wunused-variable]
+    int histn, histt, histtx;
+        ^
+../src/NIHCode.cpp:364:9: warning: unused variable 'hist_tcount' [-Wunused-variable]
+    int hist_tcount=0;
+        ^
+../src/NIHCode.cpp:363:23: warning: unused variable 'histtx' [-Wunused-variable]
+    int histn, histt, histtx;
+                      ^
+../src/NIHCode.cpp:424:20: warning: unused variable 'n1xqS' [-Wunused-variable]
+    fftwf_complex *n1xqS = init_matrix<fftwf_complex>(ngridpair);
+                   ^
+../src/NIHCode.cpp:366:11: warning: unused variable 'tmax' [-Wunused-variable]
+    float tmax=0;
+          ^
+../src/NIHCode.cpp:466:11: warning: unused variable 'tilt1_0' [-Wunused-variable]
+    float tilt1_0=0;
+          ^
+../src/NIHCode.cpp:358:11: warning: unused variable 'norm1mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+          ^
+../src/NIHCode.cpp:471:11: warning: unused variable 'nNav' [-Wunused-variable]
+    float nNav=0.8917872906; // average (n.N)
+          ^
+../src/NIHCode.cpp:467:11: warning: unused variable 'tilt2_0' [-Wunused-variable]
+    float tilt2_0=0;
+          ^
+../src/NIHCode.cpp:358:24: warning: unused variable 'norm2mol' [-Wunused-variable]
+    float norm1mol[3], norm2mol[3]; //the normal vector of an individual lipid
+                       ^
+18 warnings generated.
+g++ -L/opt/local/lib/ -o NIHCode src/NIHCode.o -lfftw3 -lfftw3f 
